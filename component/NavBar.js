@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { motion, AnimatePresence } from "framer-motion";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function NavBar() {
   const [openMobileBar, setOpenMobileBar] = useState(false);
@@ -34,7 +34,11 @@ function NavBar() {
 
         {/* Contact Button */}
         <div>
-          <Link href="https://g.co/kgs/PLr6uxs">
+          <Link
+            href="https://g.co/kgs/PLr6uxs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="px-4 py-2 rounded-md border border-orange-100 text-white hover:bg-orange-100 hover:text-black transition-all duration-200">
               Discover Me
             </button>
