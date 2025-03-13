@@ -78,7 +78,7 @@ export default function Gallery() {
   return (
     <div className="w-full h-fit pb-10 pt-16 text-white flex flex-col items-center">
       {/* Section Heading */}
-      <h1 className="text-4xl md:text-5xl font-extrabold uppercase text-center tracking-wide">
+      <h1 className="text-4xl font-heading md:text-5xl font-extrabold uppercase text-center tracking-wide">
         Explore the <span className="text-highlight">Wonderful</span> World!
       </h1>
 
@@ -103,7 +103,7 @@ export default function Gallery() {
 
             {/* Description Section */}
             <div className="p-6 text-center flex flex-col gap-4">
-              <h2 className="text-3xl font-bold text-highlight">
+              <h2 className="text-3xl font-heading font-bold text-highlight">
                 {place.name}
               </h2>
               <p className="text-gray-300 leading-relaxed">

@@ -34,7 +34,7 @@ function HeroSection() {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-7xl leading-15 md:text-9xl text-center mt-2 font-bold md:leading-28"
+        className="text-7xl font-heading leading-15 md:text-9xl text-center mt-2 font-bold md:leading-28"
       >
         Welcome to Safa <span className="text-highlight">Tourism</span>
       </motion.h1>

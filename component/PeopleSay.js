@@ -46,7 +46,7 @@ export default function PeopleSay() {
   return (
     <div className="w-full pt-10 text-white text-center">
       {/* Heading */}
-      <h1 className="text-4xl md:text-5xl font-bold uppercase">
+      <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase">
         What People Say
       </h1>
 

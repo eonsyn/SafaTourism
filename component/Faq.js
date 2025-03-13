@@ -71,7 +71,7 @@ export default function FAQSection() {
 
   return (
     <div className="w-full pt-10 text-white text-center">
-      <h1 className="text-4xl md:text-5xl font-bold uppercase">
+      <h1 className="text-4xl font-heading md:text-5xl font-bold uppercase">
         Frequently <span className="text-highlight">Asked</span> Questions
       </h1>
       <div className="max-w-3xl mx-auto p-6 space-y-4">
@@ -103,7 +103,7 @@ export default function FAQSection() {
               ref={(el) => (answerRefs.current[index] = el)}
               className="overflow-hidden"
             >
-              <p className="p-4 text-gray-300">{faq.answer}</p>
+              <p className="p-4 tracking-wider text-gray-300">{faq.answer}</p>
             </div>
           </div>
         ))}

@@ -8,7 +8,7 @@ import Faq from "@/component/Faq";
 
 export default function Home() {
   return (
-    <div className="text-white bg-slate-800 w-screen min-h-[200vh]">
+    <div className="text-white font-text bg-slate-800 w-screen min-h-[200vh]">
       <section id="Home">
         {" "}
         <HeroSection />

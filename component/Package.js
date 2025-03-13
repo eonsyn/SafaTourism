@@ -46,7 +46,9 @@ function Package() {
 
   return (
     <div className="w-full pt-3.5">
-      <h1 className="text-6xl text-center font-bold">PICK YOUR PLAN</h1>
+      <h1 className="text-6xl font-heading text-center font-bold">
+        PICK YOUR PLAN
+      </h1>
       <p className="text-center text-highlight">Budget Friendly</p>
       <div className="offercard w-full h-fit md:h-[50vh] px-2 md:px-0 md:flex items-center justify-evenly">
         {hajjPackages.map((pkg, index) => (
