@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
 import NavBar from "./NavBar";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -27,7 +27,7 @@ function HeroSection() {
   return (
     <div className="h-fit">
       <NavBar />
-      <div className="w-full h-28 md:h-16"></div>
+      <div className="w-full h-16 md:h-16"></div>
 
       {/* Heading Animation */}
       <motion.h1
