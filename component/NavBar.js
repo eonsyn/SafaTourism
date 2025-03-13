@@ -68,8 +68,9 @@ function NavBar() {
               </button>
 
               {/* Mobile Links */}
-              {["Home", "About Us", "Gallery"].map((item, index) => (
+              {["Home", "Package", "Gallery"].map((item, index) => (
                 <Link
+                  onClick={() => setOpenMobileBar(false)}
                   key={index}
                   href={`#${item}`}
                   className="text-white py-1 border-transparent border-b-2 hover:border-highlight transition-all duration-200"

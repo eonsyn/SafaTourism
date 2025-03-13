@@ -36,7 +36,7 @@ function HeroSection() {
         transition={{ duration: 1 }}
         className="text-7xl leading-15 md:text-9xl text-center mt-2 font-bold md:leading-28"
       >
-        Discover the <span className="text-highlight">Peace</span> of Umrah
+        Welcome to Safa <span className="text-highlight">Tourism</span>
       </motion.h1>
 
       <motion.p
@@ -45,8 +45,8 @@ function HeroSection() {
         transition={{ duration: 1, delay: 0.3 }}
         className="text-center text-xl"
       >
-        <span className="text-orange-200">-</span> The Dependable Choice for
-        Your Hajj & Umrah Travels
+        <span className="text-orange-200">-</span> Discover. Explore.
+        Experience.
       </motion.p>
 
       <div className="image w-[full] md:flex justify-evenly items-start mt-3 h-[70vh] md:h-[40vh] px-3 md:px-0">
@@ -58,10 +58,11 @@ function HeroSection() {
           className="w-80 mt-16 hidden md:block text-slate-300 shadow-lg px-2 hover:shadow-2xl transition-shadow duration-300"
         >
           <h1 className="text-2xl font-semibold mb-2 leading-6">
-            The Best Choice for Your Spiritual Pilgrimage
+            Personalized Travel, Tailored for You
           </h1>
           <p className="text-slate-300 text-sm mt-4">
-            Dapibus convallis auctor scelerisque, habitant amet etiam mattis.
+            Established in 2014, Safa Tourism is committed to crafting unique
+            travel experiences that cater to all kinds of travelers.
           </p>
         </motion.div>
 
@@ -84,11 +85,10 @@ function HeroSection() {
           transition={{ duration: 1, delay: 0.5 }}
           className="w-80 mt-4 md:mt-16 text-slate-300 h-[20%] shadow-lg px-2 hover:shadow-2xl transition-shadow duration-300"
         >
-          <h1 className="text-2xl leading-6 font-semibold mb-2">
-            Dedicated to Making Your Umrah Journey Unforgettable
-          </h1>
+          <h1 className="text-2xl leading-6 font-semibold mb-2">Our Journey</h1>
           <p className="text-slate-300 text-sm mt-4">
-            Pretium nisl nibh tristique praesent eros interdum semper fusce.
+            Founded in 2014, Safa Tourism was born out of a passion for travel
+            and a mission to provide seamless, unforgettable experiences.
           </p>
         </motion.div>
       </div>

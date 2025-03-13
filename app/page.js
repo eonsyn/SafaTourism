@@ -4,6 +4,7 @@ import Package from "@/component/Package";
 import Footer from "@/component/Footer";
 import PeopleSay from "@/component/PeopleSay";
 import Gallery from "@/component/Gallery";
+import Faq from "@/component/Faq";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Package />
       </section>
       <PeopleSay />
+      <Faq />
       <Footer />
     </div>
   );

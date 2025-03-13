@@ -1,32 +1,8 @@
 "use client";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import PackageCard from "./packagecard/PackageCard";
 
-gsap.registerPlugin(ScrollTrigger);
-
 function Package() {
-  const packageRef = useRef(null);
-
-  useEffect(() => {
-    const el = packageRef.current;
-    gsap.fromTo(
-      el,
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: el,
-          start: "top 80%",
-          end: "top 30%",
-          scrub: true,
-        },
-      }
-    );
-  }, []);
-
   const hajjPackages = [
     {
       price: "$2,500 USD",
@@ -69,7 +45,7 @@ function Package() {
   ];
 
   return (
-    <div className="w-full pt-3.5" ref={packageRef}>
+    <div className="w-full pt-3.5">
       <h1 className="text-6xl text-center font-bold">PICK YOUR PLAN</h1>
       <p className="text-center text-highlight">Budget Friendly</p>
       <div className="offercard w-full h-fit md:h-[50vh] px-2 md:px-0 md:flex items-center justify-evenly">

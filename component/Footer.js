@@ -19,9 +19,10 @@ export default function Footer() {
             </p>
           </div>
           <p className="mt-4 text-gray-400 text-sm leading-relaxed max-w-md">
-            Lorem ipsum dolor amet, consectetur adipiscing elit. Dignissim
-            facilisi et tempor integer nullam est eget. Inceptos mattis
-            tristique vestibulum nostra vivamus sollicitudin facilisis.
+            Safa Tourism is a travel agency based in Hazratganj, Lucknow,
+            established in 2014. It specializes in personalized travel services,
+            offering custom itineraries, flight & hotel bookings, tour packages,
+            visa assistance, and local sightseeing.
           </p>
 
           {/* Social Media Icons */}

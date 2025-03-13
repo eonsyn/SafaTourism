@@ -4,6 +4,7 @@ import { useState } from "react";
 function PackageCard({ price, title, facilities, image }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const maxVisibleFacilities = 3; // Show only 3 points initially
+
   const handlewhatsapp = () => {
     const message = `Hello, I'm interested in the ${title} package priced at ${price}. Could you please provide more details?`;
     const phoneNumber = "7307922403"; // Your WhatsApp number
@@ -16,7 +17,7 @@ function PackageCard({ price, title, facilities, image }) {
   return (
     <>
       {/* Main Card */}
-      <div className=" h-fit my-2 md:my-0 md:h-[90%] w-full md:w-[20%] rounded-2xl overflow-hidden relative group shadow-lg">
+      <div className="h-fit my-2 md:my-0 md:h-[90%] w-full md:w-[20%] rounded-2xl overflow-hidden relative group shadow-lg">
         {/* Background Image with Hover Effect */}
         <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-500 group-hover:scale-105"
@@ -47,7 +48,7 @@ function PackageCard({ price, title, facilities, image }) {
           {/* Show "View Details" if more facilities exist */}
           {facilities.length > maxVisibleFacilities && (
             <button
-              className="mt-2   text-slate-300  px-2 bg-highlight rounded-md  cursor-pointer"
+              className="mt-2 text-slate-300 px-2 bg-highlight rounded-md cursor-pointer"
               onClick={() => setIsModalOpen(true)}
             >
               View Details
@@ -56,10 +57,10 @@ function PackageCard({ price, title, facilities, image }) {
         </div>
       </div>
 
-      {/* Modal for Full Details */}
+      {/* Full-Screen Modal */}
       {isModalOpen && (
-        <div className="fixed z-50 inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-          <div className="bg-white text-black rounded-lg p-6 w-[90%] max-w-md shadow-xl">
+        <div className="fixed inset-0 flex items-center justify-center bg-black/60 backdrop-blur-md z-50">
+          <div className="bg-white text-black rounded-lg p-6 w-full max-w-lg shadow-xl mx-4">
             <h2 className="text-xl font-bold text-center">{title}</h2>
             <hr className="w-16 my-2 mx-auto border-gray-500" />
             <p className="text-lg font-semibold text-center">{price}</p>
