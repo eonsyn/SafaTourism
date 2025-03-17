@@ -14,7 +14,7 @@ function NavBar() {
         {/* Logo */}
         <div className="h-full w-24 flex items-center justify-center flex-col">
           <p className="leading-5 font-heading font-bold text-2xl">
-            Safa <br />
+            Safa 1<br />
             <span className="text-highlight">Tourism</span>
           </p>
         </div>
